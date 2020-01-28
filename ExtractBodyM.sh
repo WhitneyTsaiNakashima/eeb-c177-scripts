@@ -1,4 +1,4 @@
-##! /bin/bash
+#!/bin/bash
 
 # function:
 # remove header from Pacifici2013_data.csv
@@ -17,3 +17,4 @@ tail -n +2 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv  | cut -d ";" -
 # add line
 # PATH="$PATH:$HOME/Developer/repos/eeb-c177-scripts"
 # save the file
+# change permissions for file with chmod +x

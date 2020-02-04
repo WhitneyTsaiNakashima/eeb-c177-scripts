@@ -7,7 +7,11 @@
 # sort by BodyMass
 # store in a new file called BodyM.csv
 
-tail -n +2 ~/Developer/repos/CSB/unix/data/Pacifici2013_data.csv  | cut -d ";" -f 2-6 | tr ";" " " | sort -r -n -k 6 > BodyM.csv
+INPUTDIR=$1
+DELIM=$2
+OUTPUT=$3
+
+tail -n +2 $INPUTDIR  | cut -d $DELIM -f 2-6 | tr $DELIM " " | sort -r -n -k 6 > $OUTPUT
 
 
 # Lecture HW4 q6:
